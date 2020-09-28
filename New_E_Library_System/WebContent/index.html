@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>E-library</title>
+<style>
+	a{
+		text-decoration : none;
+		color : white;
+	}
+	a:hover{
+		color : gold;
+	}
+	.dropdown ul{
+		list-style : none;
+	}
+	.dropdown ul li{
+		background-color : #3C3E94;
+		width : 314px;
+		border : 1px solid white;
+		height : 50px;
+		line-height : 50px;
+		text-align : center;
+		float : left;
+		color : white;
+		font-size : 20px;
+		position : relative;
+	}
+	.dropdown ul li:hover{
+		background-color : black/* #388222 */;
+	}
+	.dropdown ul li:hover > ul{
+		display : block;
+	}
+	.dropdown ul ul{
+		display : none;
+		margin-left : 0px;
+		margin : 50px;
+		top : 0px;
+		position : absolute;
+	}
+	.dropdown ul ul li{
+		margin-left : -91px;
+	}
+	.dropdown ul ul li a{
+		color : white;
+	}
+	.dropdown ul ul li a:hover{
+		color : gold;
+	}
+	body{
+		background-color :  #e6f2ff;
+	}
+	.welcome{
+		font-family : cursive;
+		font-size : 25px;
+		text-align : center;
+	}
+	.image{
+		margin-left : 41px;
+		margin-top : 20px;
+	}
+</style>
+</head>
+<body>
+	<div class = "dropdown">
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="Register.html">Registration</a>
+			</li>
+			<li>
+				<a href="About.html">About E-Library</a>
+			</li>
+			<li>Login
+				<ul>
+					<li>
+						<a href="Login.html">User Login</a>
+					</li>
+					<li>
+						<a href="Admin.html">Admin Login</a>
+					</li>	
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class = "welcome">
+		<br/><br/>
+		<b>Welcome to E-Library</b>
+	</div>
+	<div class = image>
+		<img src="Banner_Image.jpg" width=1261px height=500px >
+	</div>
+</body>
+</html>

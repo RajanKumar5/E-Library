@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	background:url(Background_Image.jpeg); 
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.login {
+	width: 320px;
+	height: 350px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	font-family: sans-serif;
+}
+
+.avtar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.login p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.login input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.login input[type="text"], input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.login input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.login input[type="submit"]:hover {
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.login a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.login a:hover {
+	color: #ffc107;
+}
+
+	a{
+		text-decoration : none;
+		color : white;
+	}
+	a:hover{
+		color : gold;
+	}
+	.dropdown ul{
+		list-style : none;
+		position : absolute;
+	}
+	.dropdown ul li{
+		background-color : #3C3E94;
+		width : 314px;
+		border : 1px solid white;
+		height : 50px;
+		line-height : 50px;
+		text-align : center;
+		float : left;
+		color : white;
+		font-size : 20px;
+		position : relative;
+	}
+	.dropdown ul li:hover{
+		background-color : black/* #388222 */;
+	}
+	.dropdown ul li:hover > ul{
+		display : block;
+	}
+	.dropdown ul ul{
+		display : none;
+		margin-left : 0px;
+		margin : 50px;
+		top : 0px;
+		position : absolute;
+	}
+	.dropdown ul ul li{
+		margin-left : -91px;
+	}
+	.dropdown ul ul li a{
+		color : white;
+		font-family: Times New Roman;
+	}
+	.dropdown ul ul li a:hover{
+		color : gold;
+	}
+
+</style>
+<meta charset="ISO-8859-1">
+<title>Admin Login Page</title>
+</head>
+<body>
+	<div class = "dropdown">
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="Register.html">Registration</a>
+			</li>
+			<li>
+				<a href="About.html">About E-Library</a>
+			</li>
+			<li>Login
+				<ul>
+					<li>
+						<a href="Login.html">User Login</a>
+					</li>
+					<li>
+						<a href="Admin.html">Admin Login</a>
+					</li>	
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="login">
+		<img
+			src="Avtar_Image.png"
+			class="avtar">
+		<h1>Hello Admin</h1>
+		<form action="AdminLogin" method="post" autocomplete="off">
+			<p>Username</p>
+			<input type="text" name="username" placeholder="Enter Username" required="">
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Enter Password" required="">
+			<input type="submit" name="" value="Login"> <br />
+		</form>
+	</div>
+</body>
+</html>
